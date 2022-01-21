@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="sources/favicon.ico" type="image/x-icon" />
+    <title>Body</title>
+    <script src="js/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-section">
+        <img src="sources/Cover.jpg" alt="Cover" />
+      </div>
+      <div class="right-section">
+        <form action="https://www.youtube.com/watch?v=5T5BY1j2MkE" onSubmit="return validateForm();" name="Registration">
+          <h1>Registration</h1>
+          <input type="text" name="Username" placeholder="Username" required />
+          <input type="date" name="Birthdate" placeholder="Birthdate" />
+          <select name="Sex" list="sex" placeholder="Sex">
+            <option value="" disabled selected hidden>Select your sex</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="email" name="Email" placeholder="Email" required />
+          <input type="number" name="Phonenumber" placeholder="Phone" />
+          <input id="submitbutton" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
